@@ -52,7 +52,7 @@ function CameraScreen(props) {
               });
               data.append("token", props.dataUser.token);
 
-              var rawResponse = await fetch(`http://${MY_IP}:3000/upload`, {
+              var rawResponse = await fetch(`https://questv1.herokuapp.com/upload`, {
                 method: "POST",
                 body: data,
               });

@@ -167,7 +167,7 @@ function AddQuestScreen(props) {
         },
       };
 
-      let envoiBack = await fetch(`http://${MY_IP}:3000/addquest`, {
+      let envoiBack = await fetch(`https://questv1.herokuapp.com/addquest`, {
         method: "post",
 
         body: JSON.stringify(data),
@@ -296,13 +296,13 @@ function AddQuestScreen(props) {
           onPress={
             oneRoomChecked
               ? () => {
-                  setOneRoomChecked(false);
-                  handleRemoveRoom(1);
-                }
+                setOneRoomChecked(false);
+                handleRemoveRoom(1);
+              }
               : () => {
-                  setOneRoomChecked(true);
-                  setPiecesList([...piecesList, 1]);
-                }
+                setOneRoomChecked(true);
+                setPiecesList([...piecesList, 1]);
+              }
           }
         />
         <CheckBox
@@ -319,13 +319,13 @@ function AddQuestScreen(props) {
           onPress={
             twoRoomChecked
               ? () => {
-                  setTwoRoomChecked(false);
-                  handleRemoveRoom(2);
-                }
+                setTwoRoomChecked(false);
+                handleRemoveRoom(2);
+              }
               : () => {
-                  setTwoRoomChecked(true);
-                  setPiecesList([...piecesList, 2]);
-                }
+                setTwoRoomChecked(true);
+                setPiecesList([...piecesList, 2]);
+              }
           }
         />
       </View>
@@ -344,13 +344,13 @@ function AddQuestScreen(props) {
           onPress={
             threeRoomChecked
               ? () => {
-                  setThreeRoomChecked(false);
-                  handleRemoveRoom(3);
-                }
+                setThreeRoomChecked(false);
+                handleRemoveRoom(3);
+              }
               : () => {
-                  setThreeRoomChecked(true);
-                  setPiecesList([...piecesList, 3]);
-                }
+                setThreeRoomChecked(true);
+                setPiecesList([...piecesList, 3]);
+              }
           }
         />
         <CheckBox
@@ -367,14 +367,14 @@ function AddQuestScreen(props) {
           onPress={
             fourRoomChecked
               ? () => {
-                  setFourRoomChecked(false);
-                  handleRemoveRoom(4);
-                }
+                setFourRoomChecked(false);
+                handleRemoveRoom(4);
+              }
               : () => {
-                  setFourRoomChecked(true);
-                  setPiecesList([...piecesList, 4]);
-                  console.log(piecesList);
-                }
+                setFourRoomChecked(true);
+                setPiecesList([...piecesList, 4]);
+                console.log(piecesList);
+              }
           }
         />
       </View>
@@ -393,13 +393,13 @@ function AddQuestScreen(props) {
           onPress={
             fiveRoomChecked
               ? () => {
-                  setFiveRoomChecked(false);
-                  handleRemoveRoom(5);
-                }
+                setFiveRoomChecked(false);
+                handleRemoveRoom(5);
+              }
               : () => {
-                  setFiveRoomChecked(true);
-                  setPiecesList([...piecesList, 5]);
-                }
+                setFiveRoomChecked(true);
+                setPiecesList([...piecesList, 5]);
+              }
           }
         />
         <CheckBox
@@ -416,13 +416,13 @@ function AddQuestScreen(props) {
           onPress={
             moreRoomChecked
               ? () => {
-                  setMoreRoomChecked(false);
-                  handleRemoveRoom(6);
-                }
+                setMoreRoomChecked(false);
+                handleRemoveRoom(6);
+              }
               : () => {
-                  setMoreRoomChecked(true);
-                  setPiecesList([...piecesList, 6]);
-                }
+                setMoreRoomChecked(true);
+                setPiecesList([...piecesList, 6]);
+              }
           }
         />
       </View>
